@@ -18,6 +18,9 @@
   },
   "author": "David Loder",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveyloder/NucampSite.git",
   "devDependencies": {
     "copyfiles": "^2.0.0",
     "imagemin-cli": "^5.1.0",
