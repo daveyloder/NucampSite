@@ -3,6 +3,25 @@
   "version": "1.0.0",
   "description": "This is a website for the fictional campsites review site NuCamp.",
   "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "bootstrap-social": "^5.1.1",
+    "copyfiles": "^2.0.0",
+    "font-awesome": "^4.7.0",
+    "imagemin-cli": "^5.1.0",
+    "imagemin-cli 2": "^3.0.0",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
+    "onchange 2": "^3.3.0",
+    "parallelshell": "^3.0.1",
+    "popper.js": "^1.12.9",
+    "rimraf": "^2.6.2",
+    "usemin-cli": "^0.6.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "onchange": "^6.1.0"
+  },
   "scripts": {
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "clean": "rimraf dist",
@@ -16,26 +35,17 @@
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
   },
-  "author": "David Loder",
-  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daveyloder/NucampSite.git",
-  "devDependencies": {
-    "copyfiles": "^2.0.0",
-    "imagemin-cli": "^5.1.0",
-    "lite-server": "^2.3.0",
-    "node-sass": "^4.13.1",
-    "onchange": "^6.1.0",
-    "parallelshell": "^3.0.1",
-    "rimraf": "^2.6.2",
-    "usemin-cli": "^0.6.0"
+    "url": "git+https://github.com/daveyloder/NucampSite.git"
   },
-  "dependencies": {
-    "bootstrap": "^4.4.1",
-    "bootstrap-social": "^5.1.1",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.12.9"
-  }
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "David Loder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daveyloder/NucampSite/issues"
+  },
+  "homepage": "https://github.com/daveyloder/NucampSite#readme"
 }
